@@ -1,5 +1,7 @@
 package com.example.todolistvoicecontrol29032022.presentation;
 
+import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.lifecycle.ViewModel;
@@ -104,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
                 "record1.3gp",
                 PriorityColorEnum.DEFAULT));
         mainViewModel.updateTodo(new TodoEntity());
-        mainViewModel.delete(T));
+        mainViewModel.delete();
     }
     private void eventClick() {
         btnRecord.setOnClickListener(new View.OnClickListener() {
